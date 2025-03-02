@@ -1,0 +1,68 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/BD-LOGO.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="options">Home</a></li>
+                <li><a href="who.html" class="options">Who can/can't Donate</a></li>
+                <li><a href="Benifits.html" class="options">Benifits of Donate</a></li>
+                <li><a href="About.html" class="options">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="registration-container">
+    <h2>Blood Donation Registration</h2>
+    <form id="registrationForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" class="register-input" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+      <label for="bloodGroup">Blood Group:</label>
+      <select id="bloodGroup" name="bloodGroup" required>
+        <option value="">Select your blood group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" class="register-input" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" class="register-input" id="password" name="password" placeholder="Enter password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" class="register-input" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" class="register-input" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+
+      <label for="state">State:</label>
+      <input type="text" class="register-input" id="state" name="state" placeholder="Enter your state" required>
+
+      <label for="city">City:</label>
+      <input type="text" class="register-input" id="city" name="city" placeholder="Enter your city" required>
+
+      <button type="button" class="register-btn" onclick="submitForm()">Register</button>
+    </form>
+
+    <p>Already Have an Account?<a href="login.html">login</a></p>
+    
+  </div>
+
+</body>
+</html>
