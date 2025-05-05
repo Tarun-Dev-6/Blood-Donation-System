@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blood Donation Site</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donation - Save Lives</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
 </head>
 <body>
-    <header>
-        <img src="/BD-LOGO.jpg" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="options">Home</a></li>
-                <li><a href="who.html" class="options">Who can/can't Donate</a></li>
-                <li><a href="Benifits.html" class="options">Benifits of Donate</a></li>
-                <li><a href="About.html" class="options">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="background-img">
-        <h1 >Save Lives, Donate Blood</h1>
-        <div>
-            <button class="btn" onclick="goToDashbord()">Request Blood</button>
-          <button class="btn" onclick="goToLogin()">Donate Blood</button>
-        </div>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <h1><span>Blood</span>Donation</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="who.html">Eligibility</a></li>
+        <li><a href="find.html">Find Donor</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+      </ul>
+    </nav>
+    <a href="dashboard.html" class="profile-icon" title="Go to Dashboard">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Icon">
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+    <img src="https://cdn-icons-png.flaticon.com/512/3601/3601311.png" alt="Blood Donation" class="hero-icon">
+    <h2>Donate Blood, Save Lives</h2>
+    <p>Your donation can make a difference in someone's life.</p>
+    <a href="login.html" class="btn">Receiver</a>
+    <a href="login.html" class="btn">Donor</a>
+</section>
+
+
+  <!-- Stats Section -->
+  <!-- Statistics Section -->
+<section class="stats">
+    <div class="stat">
+        <img src="https://cdn-icons-png.flaticon.com/512/3105/3105807.png" alt="Donors Icon" class="stat-icon">
+        <h3>100+</h3>
+        <p>Donors Registered</p>
+    </div>
+    <div class="stat">
+        <img src="https://cdn-icons-png.flaticon.com/512/4273/4273059.png" alt="Donations Icon" class="stat-icon">
+        <h3>5+</h3>
+        <p>Successful Donations</p>
+    </div>
+    <div class="stat">
+        <img src="https://cdn-icons-png.flaticon.com/512/3601/3601311.png" alt="Requests Icon" class="stat-icon">
+        <h3>10+</h3>
+        <p>Blood Requests Fulfilled</p>
+    </div>
+</section>
+
+
+  <!-- How it Works -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+      <div class="step-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Register Icon" />
+        <h3>Register</h3>
+        <p>Sign up to be a part of our donor community.</p>
+        <a href="register.html" class="step-btn">Register</a>
       </div>
+      <div class="step-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2976/2976280.png" alt="Donate Icon" />
+        <h3>Donate</h3>
+        <p>Contribute and help save a life in need.</p>
+        <a href="donate.html" class="step-btn">Donate Blood</a>
+      </div>
+      <div class="step-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2738/2738899.png" alt="Request Icon" />
+        <h3>Request</h3>
+        <p>Raise a request in emergencies, instantly.</p>
+        <a href="request.html" class="step-btn">Request Blood</a>
+      </div>
+    </div>
+  </section>
 
-      <footer>
-        <p>&copy; 2025 Blood Donation Website. All Rights Reserved.</p>
-    </footer>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Donors Say</h2>
+    <div class="testimonial">
+      <p>"Donating blood was the best decision I made. Helping others gives me peace."</p>
+      <h4>- Arjun R.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"I needed blood urgently, and this platform helped me find a donor quickly!"</p>
+      <h4>- Manasa K.</h4>
+    </div>
+  </section>
 
-    <script>
-        function goToLogin() {
-  window.location.href = 'login.html';
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Blood Donation Platform. Built with ❤️ to Save Lives.</p>
+  </footer>
 
-function goToDashbord() {
-  window.location.href = 'Dashboard.html';
-}
-    </script>
-    
 </body>
 </html>

@@ -1,0 +1,109 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body.page {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f44336, #e57373);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Form Card Container */
+  .form-container {
+    background: #fff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Headings */
+  .form-container h2 {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  
+  /* Input Fields */
+  form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #f44336;
+  }
+  
+  /* Buttons */
+  form button {
+    width: 100%;
+    padding: 13px;
+    background-color: #d32f2f;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.03);
+  }
+  
+  .alert-btn {
+    background-color: #e53935;
+  }
+  
+  .alert-btn:hover {
+    background-color: #c62828;
+  }
+  
+  /* Link to Register/Login */
+  .form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .form-footer a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  

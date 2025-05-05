@@ -1,0 +1,353 @@
+  /* Reset & Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fffafc;
+    color: #333;
+  }
+
+
+
+header {
+    background: linear-gradient(90deg, #b71c1c, #e53935);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+  }
+  .logo span {
+    color: #ffe082;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    padding: 10px;
+  border: #ffffff solid 3px;
+  border-radius: 5px;
+  transition: 0.5s;
+  }
+  
+  .profile-icon img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+  }
+  .profile-icon img:hover {
+    transform: scale(1.1);
+  }
+/* .options:hover
+{
+  padding: 10px;
+  border: #ffffff solid 3px;
+  border-radius: 5px;
+  transition: 0.5s;
+} */
+
+.background-img
+{
+    background: url(/BD-BACKGROUND.webp);
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.background-img h1{
+    font-size: 60px;
+    color: rgb(233, 107, 107);
+    padding-top: 0px;
+}
+
+.btn 
+{ 
+    background: white;
+    color: #df3737; 
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 0 10px; 
+    font-size: 22px; 
+    
+
+}
+.btn:hover {
+    background-color: #e43b3b;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/* nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+} */
+
+.who-can,.Benifits-div
+{
+    
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.who-can h2
+{
+   padding: 20px;
+   text-align: left;
+   margin: 10px 20px;
+   text-decoration: underline;
+   color: #b71c1c;
+}
+
+.who-can-cant,.Benifits-of-Donate
+{
+    padding: 20px;
+   text-align: left;
+   background-color: rgb(35, 170, 233);
+   border-radius: 10px;
+}
+.can-div,.cant-div
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: start;
+}
+.can-list,.cant-list
+{
+    text-align: left;
+    margin: 20px;
+    font-size: 30px;
+    
+}
+.can-img,.cant-img
+{
+    height: 400px;
+    width: 500px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 50px;
+}
+
+.can-img:hover,.cant-img:hover
+{
+    box-shadow: 0px 0px 15px grey;
+    transition: 0.5s;
+}
+
+.can-points-div,.cant-points-div
+{
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.can-points-div:hover,.cant-points-div:hover
+{
+    box-shadow: 0px 0px 15px grey;
+    transition: 0.5s;
+}
+
+.Benifits-div h2
+{
+  text-decoration: underline;
+}
+
+.Benifits
+{
+    margin: 50px;
+    padding: 10px;
+}
+.Benifits p
+{
+    font-size: 20px;
+    text-align: left;
+}
+
+.Benifits-p-div 
+{
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.Benifits-p-div:hover
+{
+    box-shadow: 0px 0px 15px grey;
+    transition: 0.5s;
+}
+
+
+
+/* .login-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: darkred;
+}
+
+.login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: red;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+  .registration-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    
+  }
+  
+  .registration-container h2 {
+    text-align: center;
+    color: #d63333;
+  }
+  .registration-container p,a
+  {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .registration-container a:hover
+  {
+    cursor: pointer;
+    text-decoration: underline;
+    
+  }
+  .registration-container a
+  {
+    color: #ff0000;
+    
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  
+  .register-input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  
+  input:hover, select:hover {
+    border-color: #f52525;
+    box-shadow: 0 0 5px grey;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background: #c74c4c;
+  }
+
+*/
+footer {
+    background: linear-gradient(45deg, #b71c1c, #880e4f);
+    color: #fff;
+    padding: 20px;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+
+

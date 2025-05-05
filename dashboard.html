@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donation Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">🩸 BloodConnect</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Requests</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><button id="logout-btn">Logout</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome, <span id="user-name">User</span>!</h1>
+      <p>Your Contribution Saves Lives</p>
+      <div class="hero-info">
+        <span>Blood Group: <strong id="user-blood-group">N/A</strong></span>
+        <span>Location: <strong id="user-location">N/A</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Sections -->
+  <main class="dashboard-container">
+
+    <!-- Blood Requests -->
+    <section class="card">
+      <h2>🔴 Active Blood Requests</h2>
+      <ul id="blood-requests">
+        <li>Loading blood requests...</li>
+      </ul>
+    </section>
+
+    <!-- Nearby Blood Banks -->
+    <section class="card">
+      <h2>🏥 Nearby Blood Banks</h2>
+      <ul id="blood-banks">
+        <li>Loading nearby blood banks...</li>
+      </ul>
+    </section>
+
+    <!-- Donation History -->
+    <section class="card">
+      <h2>📊 Your Donation History</h2>
+      <ul id="donation-history">
+        <li>No donation history found.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
